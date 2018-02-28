@@ -1,0 +1,213 @@
+<!--problems-->
+<!--wala npd dayon nigana akong displaymenu fcn-->
+<!--dili mugana ang mag post ka ug order (brewthis fcn)-->
+<!--and everything connects from it is dysfunctional (i.e. deleteorder, displayorder, editorder )-->
+<!--wants to add-->
+<!--idisplay apil ang description and price along coffee name nad quantity sa gorder getting from displaymenu -->
+<!--add another html for coffee list alone-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Your Coffee Shop</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+		<body class="landing">
+			<header id="header">
+				<h1><a href="index.html">Home</a></h1>
+				<!--<nav id="nav">-->
+					<!--<ul>-->
+						<!--<li><a href="menu.html">Menu</a></li>-->
+						<!--&lt;!&ndash;<li><a href="generic.html">Generic</a></li>&ndash;&gt;-->
+						<!--&lt;!&ndash;<li><a href="elements.html">Elements</a></li>&ndash;&gt;-->
+					<!--</ul>-->
+				<!--</nav>-->
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>The Coffee Shop</h2>
+				<p>Coffee to satisfy your hot cravings and fuel up your day</p>
+
+
+			</section>
+
+		<!-- One (Table) -->
+			<section id="one" class="wrapper style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>This is all the coffee we offer</h2>
+						<p>coffee facts</p>
+					</header>
+ 					<div id="showmenu" class="table"></div>
+                    <!--put list of tables here-->
+					<!--figure out nganong dili mugilid initial sa text-->
+						<section>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Espresso</td>
+											<td>Pure Coffee</td>
+											<td>Php 99.99</td>
+										</tr>
+										<tr>
+											<td>Americano</td>
+											<td>Espresso + Water</td>
+											<td>Php 119.99</td>
+										</tr>
+										<tr>
+											<td>Cappuccino</td>
+											<td> Espresso + Steamed Milk + Milk foam</td>
+											<td>Php 119.99</td>
+										</tr>
+										<tr>
+											<td>Cafe Latte</td>
+											<td>Espresso + Milk</td>
+											<td>Php 119.99</td>
+										</tr>
+										<tr>
+											<td>Macchiato</td>
+											<td>Espresso + Milk Foam</td>
+											<td>Php 119.99</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</section>
+				</div>
+			</section>
+
+
+			<!-- order section -->
+			<section id="three" class="wrapper style3 special">
+				<div class="container">
+					<header class="major">
+						<h2>Your coffee. Your choice</h2>
+						<p>Great coffee comes to those who are willing to wait! Minimum of 5 minutes processing.</p>
+					</header>
+				</div>
+				<div class="container 50%">
+					<h3>Place your Order here</h3>
+				<form method="post" action="#">
+					<div class="row uniform 50%">
+						<div class="12u$">
+                          <input id="name" name="name" type="text" placeholder="Your Name Please" class="form-control input-md">
+						</div>
+
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="coffee" id="coffee">
+									<option value="0">Choose your Coffee</option>
+									<option value="Espresso">Espresso</option>
+									<option value="Americano">Americano</option>
+									<option value="Cappuccino">Cappuccino</option>
+									<option value="Cafe Latte">Cafe Latte</option>
+									<option value="Macchiato">Macchiato</option>
+								</select>
+							</div>
+						</div>
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="quantity" id="quantity">
+									<option value="0">Quantity</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+					</div>
+					</div>
+				</form>
+
+					<div class="12u$">
+						<ul class="actions">
+							<li><input value="Brew me this coffee" class="special big" type="submit" onclick="brewthis();"></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Barista // i can do this method for listing menus instead of getting it on DB -->
+        <!--so the coffee menu list will be JUST an html -->
+			<section id="two" class="wrapper style2 special">
+				<div class="container">
+						<header class="major">
+							<h2>Meet our Baristas</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, autem.</p>
+						</header>
+
+						<div class="row">
+							<section class="3u 6u(medium) 12u$(xsmall) profile">
+								<img src="img/profile_placeholder.gif" alt="" />
+								<h4>Barista Zild</h4>
+								<p>Lorem ipsum dolor</p>
+							</section>
+							<section class="3u 6u$(medium) 12u$(xsmall) profile">
+								<img src="img/profile_placeholder.gif" alt="" />
+								<h4>Barista Unique</h4>
+								<p>Ullam nihil repudi</p>
+							</section>
+							<section class="3u 6u(medium) 12u$(xsmall) profile">
+								<img src="img/profile_placeholder.gif" alt="" />
+								<h4>Barista Blaster</h4>
+								<p>Harum corrupti quia</p>
+							</section>
+							<section class="3u$ 6u$(medium) 12u$(xsmall) profile">
+								<img src="img/profile_placeholder.gif" alt="" />
+								<h4>Barista Badjao</h4>
+								<p>Et natus sapiente</p>
+							</section>
+					</div>
+				</div>
+			</section>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li>
+								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+	<script src="js/app.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
