@@ -1,10 +1,3 @@
-<!--problems-->
-<!--wala npd dayon nigana akong displaymenu fcn-->
-<!--dili mugana ang mag post ka ug order (brewthis fcn)-->
-<!--and everything connects from it is dysfunctional (i.e. deleteorder, displayorder, editorder )-->
-<!--wants to add-->
-<!--idisplay apil ang description and price along coffee name nad quantity sa gorder getting from displaymenu -->
-<!--add another html for coffee list alone-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +35,12 @@
 				<h2>The Coffee Shop</h2>
 				<p>Coffee to satisfy your hot cravings and fuel up your day</p>
 
+				<ul class="actions">
+					<li><a onclick="displayorder();" class="button big">View Orders</a></li>
+				</ul>
+                <div class="container">
+                <div id="showorder" class="table"></div>
+                </div>
 
 			</section>
 
@@ -53,8 +52,6 @@
 						<p>coffee facts</p>
 					</header>
  					<div id="showmenu" class="table"></div>
-                    <!--put list of tables here-->
-					<!--figure out nganong dili mugilid initial sa text-->
 						<section>
 							<div class="table-wrapper">
 								<table>
@@ -151,8 +148,6 @@
 			</section>
 
 
-		<!-- Barista // i can do this method for listing menus instead of getting it on DB -->
-        <!--so the coffee menu list will be JUST an html -->
 			<section id="two" class="wrapper style2 special">
 				<div class="container">
 						<header class="major">

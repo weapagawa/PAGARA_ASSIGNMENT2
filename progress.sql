@@ -62,10 +62,10 @@ create or replace function editorder( in ebname text, in ebcoffee text,  in ebqu
 $$
   declare
     loc_res text;
-    loc_ebcoffee text;
-    loc_ebname text;
-    loc_ebquantity text;
 
+    loc_ebname text;
+    loc_ebcoffee text;
+    loc_ebquantity text;
   begin
      select into loc_ebname name, loc_ebcoffee coffee, loc_ebquantity quantity from breworder;
      if loc_ebname NOTNULL then

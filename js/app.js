@@ -91,7 +91,9 @@ function showorder(name,quantity){
         '<td>' + name + '</td>' +
         '<td>' + coffee + '</td>' +
         '<td>' + quantity + ' Cup of Coffee ' + '</td>' +
-		// "<td><a data-toggle='modal' href='edit.html' class='button small'>Edit</a></td>" +
+		// '<td><a data-toggle="modal" class="button small" href="edit.html">Edit</a><a data-toggle="modal" onclick="deleteorder();" class="button small">Cancel Order</a></td>' +
+
+		// "<td><a data-toggle='modal' onclick='deleteorder();' class='button small'>Cancel Order</a></td>" +
         '</div>' +
         '</table>'
 }

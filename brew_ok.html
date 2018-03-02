@@ -37,7 +37,9 @@
 					<li><a onclick="displayorder();" class="button big">View Orders</a></li>
 				</ul>
                 <div class="container">
-                <div id="showorder" class="table"></div>
+                <div id="showorder" class="table"></div><br>
+				<a href='edit.html' class="button small">Edit</a>
+                <a data-toggle='modal' onclick='deleteorder();' class="button small">Cancel Order</a>
                 </div>
 			</section>
 
@@ -86,7 +88,7 @@
 
 					<div class="12u$">
 						<ul class="actions">
-							<li><input value="Brew me this coffee" class="special big" type="submit" onclick="editorder();"></li>
+							<li><input value="Brew me this coffee" class="special big" type="submit" onclick="brewthis();"></li>
 						</ul>
 					</div>
 				</div>
